@@ -2,6 +2,7 @@
 from tkinter import *
 from tkinter import messagebox
 import ttkbootstrap
+from PIL import ImageTk
 
 # главное окно приложения
 window = ttkbootstrap.Window(themename="darkly")
@@ -17,7 +18,7 @@ font_header = ('Arial', 15)
 font_entry = ('Arial', 12)
 label_font = ('Arial', 11)
 base_padding = {'padx': 10, 'pady': 8}
-header_padding = {'padx': 10, 'pady': 12}
+header_padding = {'padx': 10, 'pady': 30}
 
 
 # обработчик нажатия на клавишу 'Войти'
@@ -64,5 +65,9 @@ forgot_label = Label(window, text='Забыли пароль?', font=label_font,
 forgot_label.bind("<Button-1>", forgot)
 forgot_label.pack()
 
+image = PhotoImage(file="D:\Materials\Дипломная работа\Materials\doc.png")
+
+label = Label(window, image = image)
+label.pack()
 # запускаем главный цикл окна
 window.mainloop()
