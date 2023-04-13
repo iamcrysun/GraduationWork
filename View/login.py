@@ -30,6 +30,9 @@ def clicked():
     # выводим в диалоговое окно введенные пользователем данные
     messagebox.showinfo('Заголовок', '{username}, {password}'.format(username=username, password=password))
 
+def forgot():
+    pass
+
 
 # заголовок формы: настроены шрифт (font), отцентрирован (justify), добавлены отступы для заголовка
 # для всех остальных виджетов настройки делаются также
@@ -57,6 +60,9 @@ password_entry.pack()
 send_btn = Button(window, text='Войти', command=clicked)
 send_btn.pack(**base_padding)
 
+forgot_label = Label(window, text='Забыли пароль?', font=label_font,  **base_padding)
+forgot_label.bind("<Button-1>", forgot)
+forgot_label.pack()
 
 # запускаем главный цикл окна
 window.mainloop()
