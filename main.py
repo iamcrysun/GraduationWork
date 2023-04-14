@@ -1,16 +1,23 @@
-# This is a sample Python script.
+import tkinter as tk
+from tkinter import *
+from tkinter import messagebox
+import ttkbootstrap
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from View.login import Login
+from View.registration import  Registration
+
+# главное окно приложения
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+window = ttkbootstrap.Window(themename="darkly")
+# заголовок окна
+window.title('Проверка трафика')
+# размер окна
+window.geometry('900x600')
+# можно ли изменять размер окна - нет
+window.resizable(False, False)
 
+reg=Registration(window)
+reg.pack()
+window.mainloop()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
