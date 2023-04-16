@@ -10,6 +10,10 @@ class Registration(tk.Frame):
         name_entry=tk.Entry(self, bg='#fff', fg='#444')
         name_entry.pack()
 
+        tk.Label(self, text="\nВведите электронную почту", justify="left").pack()
+        email_entry = tk.Entry(self, bg='#fff', fg='#444')
+        email_entry.pack()
+
         tk.Label(self, text="\n Введите логин", justify="left").pack()
         log_entry=tk.Entry(self, bg='#fff', fg='#444')
         log_entry.pack()
