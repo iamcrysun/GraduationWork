@@ -6,7 +6,7 @@ from dotenv import dotenv_values
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-from server.configs.config import CONFIGS_PATH, ENVS_PATH
+from Server.configs.config import CONFIGS_PATH, ENVS_PATH
 
 
 @dataclass(slots=True, frozen=True)

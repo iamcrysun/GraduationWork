@@ -2,8 +2,8 @@ import os
 from enum import Enum
 
 # Paths & Dirs
-CONFIGS_PATH = os.path.abspath("./server/configs")
-ENVS_PATH = os.path.abspath("./server/envs")
+CONFIGS_PATH = os.path.abspath("./Server/configs")
+ENVS_PATH = os.path.abspath("./Server/envs")
 STATIC_FILES_PATH = os.path.abspath("./media")
 # Versions
 
