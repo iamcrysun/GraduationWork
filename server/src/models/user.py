@@ -3,7 +3,7 @@ import datetime
 from sqlalchemy import Column, String, Boolean, DateTime, Integer
 from sqlalchemy.orm import relationship
 
-from Server.src.models.entity import Entity
+from server.src.models.entity import Entity
 
 
 class User(Entity):
